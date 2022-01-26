@@ -2,3 +2,4 @@ examples/Bar/Bar
 examples/bar/bar
 examples/bar_custom/go_custom
 .vscode/launch.json
+generator/cmd/generator/generator.exe

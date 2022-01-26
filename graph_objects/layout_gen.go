@@ -32,7 +32,7 @@ type Layout struct {
 	// Bargap
 	// arrayOK: false
 	// type: number
-	// Sets the gap (in plot fraction) between bars of adjacent location coordinates.
+	// Sets the gap between bars of adjacent location coordinates. Values are unitless, they represent fractions of the minimum difference in bar positions in the data.
 	Bargap float64 `json:"bargap,omitempty"`
 
 	// Bargroupgap
@@ -6304,12 +6304,12 @@ const (
 	BarBarmodeGroup          LayoutBarmode = "group"
 	BarBarmodeOverlay        LayoutBarmode = "overlay"
 	BarBarmodeRelative       LayoutBarmode = "relative"
-	BarpolarBarmodeStack     LayoutBarmode = "stack"
-	BarpolarBarmodeOverlay   LayoutBarmode = "overlay"
 	HistogramBarmodeStack    LayoutBarmode = "stack"
 	HistogramBarmodeGroup    LayoutBarmode = "group"
 	HistogramBarmodeOverlay  LayoutBarmode = "overlay"
 	HistogramBarmodeRelative LayoutBarmode = "relative"
+	BarpolarBarmodeStack     LayoutBarmode = "stack"
+	BarpolarBarmodeOverlay   LayoutBarmode = "overlay"
 )
 
 // LayoutBarnorm Sets the normalization for bar traces on the graph. With *fraction*, the value of each bar is divided by the sum of all values at that location coordinate. *percent* is the same but multiplied by 100 to show percentages.

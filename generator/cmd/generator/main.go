@@ -23,7 +23,7 @@ func main() {
 
 	file, err := os.Open(*schema)
 	if err != nil {
-		log.Fatalf("unable to open schema, %s", err)
+		log.Fatalf("unable to open schema, %s %s", err, *schema)
 	}
 
 	root, err := generator.LoadSchema(file)
